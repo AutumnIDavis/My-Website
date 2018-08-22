@@ -185,12 +185,6 @@ footer{
    font-weight: 200;
 }
 
-@media only screen and (max-width: 768px) {
-   .demo .main-title {
-      font-size: 3em;
-   }
-}
-
 .blog{
   width: 50%;
   margin: 5%;
@@ -358,103 +352,6 @@ img {vertical-align: middle;}
 }
 
 
-/*                                   tablet                                   */
-
-@media only screen and (max-width: 768px) {
-
-      .large-header {
-        position: relative;
-        width: 106%;
-        /* background: #111; */
-        overflow: hidden;
-        background-size: cover;
-        background-position: center center;
-        z-index: 1;
-        left: -9%;
-        top: -75px;
-        height: 150px;
-      }
-
-      .headerLinks{
-        position: fixed;
-        top: 750px;
-        background-color: rgba(222, 170, 241, 0.43);
-      }
-
-      * {box-sizing: border-box;}
-      body {font-family: Verdana, sans-serif;}
-      .mySlides {display: none;}
-      img {vertical-align: middle;}
-
-      /* Slideshow container */
-      .slideshow-container {
-        /* width: 1425px;
-        height: 300px; */
-        position: relative;
-        margin: auto;
-        top: 869px;
-        left: -75%;
-      }
-
-      .slideshow-container img{
-        height: 800px;
-        position: relative;
-        margin: auto;
-        top: -1013px;
-        width: 805px;
-        left: 58%;
-        height: 533px;
-        z-index: -2;
-        width: -800px;
-      }
-
-      .active {
-        background-color: #717171;
-      }
-
-      /* Fading animation */
-      .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-
-      @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-
-      /* On smaller screens, decrease text size */
-      @media only screen and (max-width: 300px) {
-        .text {font-size: 11px}
-      }
-
-
-
-      .helloWorld{
-       background-color: #ffffff60;
-       position: relative;
-       top: -185px;
-       left: -15%;
-       width: 121.4%;
-       height: 500px;
-       line-height: 26px;
-       font-size: 10px;
-       padding: 35px 40px 35px 30px;
-       margin: 25px;
-       display: inline-block;
-       z-index: -1;
-      }
-    }
-
-
-
 
 
     /*                              large tablet                              */
@@ -482,17 +379,38 @@ img {vertical-align: middle;}
             background-size: cover;
             background-position: center center;
             z-index: 1;
-            left: -9%;
+            left: -5%;
             top: -75px;
             height: 150px;
           }
 
           .headerLinks{
-            left: 588px;
-            position: fixed;
-            top: 25px;
+            float: right;
             z-index: 2;
-            /* background-color: rgba(222, 170, 241, 0.43); */
+            top: 29px;
+            padding: 104px;
+          }
+
+          ul {
+              text-align: right;
+              padding: 0% 0%;
+              display: inline-flex;
+              position: absolute;
+              top: 5%;
+              text-align: ;
+              left: 44%;
+              z-index: 1;
+          }
+
+          li {
+              list-style: none;
+              justify-content: center;
+              margin: 17px;
+              padding: -5px 15px 17px;
+              display: inline-block;
+              font-size: 13px;
+              color: white;
+              text-shadow: -3px 3px 9px black;
           }
 
           * {box-sizing: border-box;}
@@ -555,8 +473,8 @@ img {vertical-align: middle;}
            background-color: #ffffff60;
            position: relative;
            top: -185px;
-           left: -10%;
-           width: 121.4%;
+           left: -11%;
+           width: 151.4%;
            height: 500px;
            line-height: 26px;
            font-size: 10px;
@@ -568,82 +486,43 @@ img {vertical-align: middle;}
         }
 
 
+          /* Draw */
 
 
-
-
-
-
-
-    /*                                   mobile                                   */
-
-    @media only screen and (max-width: 320px) {
-          * {box-sizing: border-box;}
-          body {font-family: Verdana, sans-serif;}
-          .mySlides {display: none;}
-          img {vertical-align: middle;}
-
-          /* Slideshow container */
-          .slideshow-container {
-            position: relative;
-            margin: auto;
-            top: 18px;
-            left: -25%;
+          body{
+            /* background-color: white; */
           }
 
-          .slideshow-container img{
-            height: 500px;
-            position: relative;
-            margin: auto;
-            top: -1013px;
-            left: -5%;
-            z-index: -2;
+          .concept {
+            display: inline-flex;
+            /* padding: 64px; */
           }
 
-          .active {
-            background-color: #717171;
+          .concept img{
+            /* max-width: 730px; */
+            /* max-height: 820px; */
           }
 
-          /* Fading animation */
-          .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-          }
-
-          @-webkit-keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-          }
-
-          @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-          }
-
-          /* On smaller screens, decrease text size */
-          @media only screen and (max-width: 300px) {
-            .text {font-size: 11px}
+          #content {
+              height: 100%;
+              margin: 0 0 0 300px;
+              top: 0;
           }
 
 
-
-          .helloWorld{
-            background-color: #ffffff60;
-            /* position: relative; */
-            top: -170px;
-            left: 71.3%;
-            width: 200px;
-            height: 500px;
-            line-height: 25px;
-            font-size: 15px;
-            padding: 35px 40px 35px 30px;
-            margin: 25px;
-            display: block;
-            /* z-index: -1; */
+          #img-container {
+              margin: -50px -69px;
+              padding: 0;
           }
+
+          #img-container .picture_holder {
+              float: left;
+          }
+
         }
+
+
+
 
 
 
@@ -727,9 +606,9 @@ p{
 .ResumeDrawing img{
   display: inline-block;
   width: 43%;
-  position: absolute;
-  left: 50%;
-  top: 70%;
+  position: fixed;
+  top: 16%;
+  left: 57%;
 }
 
 .content{
@@ -880,7 +759,7 @@ body{
 
 .concept img{
   /* max-width: 730px; */
-  max-height: 820px;
+  height: -webkit-fill-available;
 }
 
 #content {
@@ -897,4 +776,148 @@ body{
 
 #img-container .picture_holder {
     float: left;
+}
+
+
+/*                                  my phone                                  */
+
+@media only screen and (max-width: 375px) {
+  .helloWorld{
+    background-color: #ffffff60;
+    position: relative;
+    top: -987px;
+    left: 71.3%;
+    width: 154.4%;
+    height: 800px;
+    line-height: 25px;
+    font-size: 15px;
+    padding: 35px 40px 35px 30px;
+    margin: 25px;
+    display: inline-block;
+    z-index: -1;
+  }
+
+  .slideshow-container img{
+    position: relative;
+    margin: auto;
+    top: -1013px;
+    width: 1380px;
+    left: 58%;
+    height: 1168px;
+    z-index: -2;
+  }
+}
+
+
+
+    /*                                   mobile                                   */
+
+    @media only screen and (max-width: 320px) {
+          * {box-sizing: border-box;}
+          body {font-family: Verdana, sans-serif;}
+          .mySlides {display: none;}
+          img {vertical-align: middle;}
+
+          /* Slideshow container */
+          .slideshow-container {
+            position: relative;
+            margin: auto;
+            top: 18px;
+            left: -25%;
+          }
+
+          .slideshow-container img{
+            height: 500px;
+            position: relative;
+            margin: auto;
+            top: -1013px;
+            left: -5%;
+            z-index: -2;
+          }
+
+          .active {
+            background-color: #717171;
+          }
+
+          /* Fading animation */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+
+          @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+          }
+
+
+
+          .helloWorld{
+            background-color: #ffffff60;
+            /* position: relative; */
+            top: -170px;
+            left: 71.3%;
+            width: 200px;
+            height: 500px;
+            line-height: 25px;
+            font-size: 15px;
+            padding: 35px 40px 35px 30px;
+            margin: 25px;
+            display: block;
+            /* z-index: -1; */
+          }
+        }
+
+
+
+/*                                  my tablet                                */
+
+@media only screen and (max-width: 1299px) {
+  .helloWorld{
+    background-color: #ffffff60;
+    position: relative;
+    top: -892px;
+    left: 77.3%;
+    width: 43.4%;
+    height: 703px;
+    line-height: 25px;
+    font-size: 15px;
+    padding: 35px 40px 35px 30px;
+    margin: 25px;
+    display: inline-block;
+    z-index: -1;
+  }
+
+  .ContactDrawing img {
+    display: inline-block;
+    width: 69%;
+    position: absolute;
+    left: 56%;
+    top: 17%;
+  }
+  .slideshow-container img{
+    position: relative;
+    margin: auto;
+    top: -1015px;
+    width: 1081px;
+    left: 61%;
+    height: 703px;
+    z-index: -2;
+  }
+
+  .demo .main-title {
+     font-size: 3em;
+  }
 }
